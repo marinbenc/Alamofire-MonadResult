@@ -25,6 +25,7 @@ extension Result {
 }
 
 // Credit to Artsy and @ashfurrow
+// And @thanegill
 
 public protocol OptionalType {
     typealias Wrapped
