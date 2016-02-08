@@ -24,7 +24,6 @@ Before:
                     completion(.Success(users))
                     
                 case .Failure(let error):
-                    print("RequestLobbies failed with error: \(error)")
                     completion(.Error(.ServerError(error.domain)))
                 }
         }
@@ -44,3 +43,6 @@ After:
         }
     }
 ```
+
+Inspired by [this article](http://alisoftware.github.io/swift/async/error/2016/02/06/async-errors/)
+And [RxOptional](https://github.com/thanegill/RxOptional)
